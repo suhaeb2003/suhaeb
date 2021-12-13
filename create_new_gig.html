@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- FONT AWESOME CDN LINK -->
+          <script src="https://kit.fontawesome.com/bba1087ae0.js" crossorigin="anonymous"></script>
+          <!-- BOOTSRAP FILE -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+          <!-- MAIN CSS FILE -->
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="./css/responsive_gig.css">
+          <link rel="stylesheet" href="css/responsive.css">
+
+          <title>CREATE GIGS</title>
+
+</head>
+<body>
+<!-- HEADING SECTION START HERE -->
+<section>
+  <nav class="d navbar main_menu navbar-expand-lg p-0">
+    <div class="container px-lg-0">
+      <a class="navbar-brand logo" href="./index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-bar-row header_manu" id="navbarSupportedContent">
+        <ul class="manu navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+            <a  class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link active" aria-current="page" href="./job_filter.html">Find Jobs</a>
+          </li>
+          <li class="nav-item post_micro">
+            <a  class="nav-link active" aria-current="page" href="./microjob.html">Micro Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./my_task.html">My task</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./my_wallet.html">Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link switc_to_gig" aria-current="page" href="./servises.html">Switch to gig</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><i  class=" style_profile fs-4 fas fa-user-circle"></i></a>
+            <!---------------SUBMANUE HERE------------->
+            <ul class="list-unstyled submanue">
+              <li><a href="./about.html"><i class="fas fa-user-alt"></i>My Profile</a></li>
+              <li><a href="#"><i class="fas fa-address-card"></i>Verify Account</a></li>
+              <li><a href="./ads.html"><i class="fas fa-ad"></i>Paids Ads</a></li>
+              <li><a href="./refarel.html"><i class="fas fa-users"></i>Referal Program</a></li>
+              <li><a href="#"><i class="far fa-bell"></i>Notification</a></li>
+              <li><a href="./giginfo.html"><i class="fab fa-gofore"></i>Gigs</a></li>
+              
+            </ul>
+             </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</section>
+<!-- HEADING SECTION END HERE -->
+<!------------- CREATE NEW GIGS SECTION START ------------------->
+<section id="gigsCreate" class="bg-light">
+          <header>
+            <div class="container-fluid ">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <ul class="nav mb-2 create_gig">
+                    <li class="nav-item">
+                      <a onclick="openOverview()" class="nav-link active fw-bold" aria-current="page" href="#aproval"><span class="text-white me-2 rounded-circle px-2 count">1</span> Overview <i class="fas fa-angle-right ms-2 text-dark"></i> </a>
+                    </li>
+                    <li class="nav-item">
+                      <a onclick="openPricing()" class="nav-link fw-bold" href="#"><span class="text-white me-2 rounded-circle px-2 count">2</span>Pricing <i class="fas fa-angle-right ms-2 text-dark"></i> </a>
+                    </li>
+                    <li  class="nav-item" href="#" >
+                      <a onclick="openPublish()" class="nav-link fw-bold" href="#"><span class="text-white me-2 rounded-circle px-2 count">3</span>Publish
+                       <i class="fas fa-angle-right ms-2 text-dark"></i> </a>
+                    </li>
+                  </ul>
+                  
+               
+                </div>
+              </div>
+            </div>
+          </header>
+         <!-- --------------------------OVERVIEW-------------------------->
+
+         <div  id="overview" class="container gig_detials">
+          <div class="row mt-5 py-3">
+             <div class="col-md-2 col-sm-0"></div>
+              <div class="col-md-8 bg-white border mb-4 py-3 ps-md-5 ms-md-5 ">
+                <div class="col-md-12">
+                  <div class="row gigs_pera">
+                    <div class="col-md-2">
+                       <p class=" fw-bold ms-4 d-inline-block text-secondary">Gigs Title</p>
+                    </div>
+                    <div class="col-md-10">
+                      <textarea name="gigTitle" id="" cols="35" rows="2" class="border fs-3 fw-bolder text-secondary ms-auto ps-2" placeholder="Write Your Gig Title"></textarea>
+                    </div>
+
+                    <div class="col-md-2 mt-1">
+                      <p class=" fw-bold text-secondary">Gigs Detials</p>
+                   </div>
+                   <div class="col-md-10 mt-1 pe-2 gigs_detials">
+                     <textarea name="gigTitle" id="" cols="35" rows="2" class="border fs-5 fw-bolder text-secondary ms-auto ps-2" placeholder="Gig detials"></textarea>
+                   </div>
+                  </div>
+                 
+                  
+                </div>
+                <div class="row my-3">
+                  <div class="col-md-2">
+                    <p class="fw-bold ms-3 text-secondary">Category</p>
+                  </div>
+                  <div class="col-md-5 mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>GRAPHICS & DESIGN</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-5">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>LOGO DESIGN</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select></div>
+                </div>
+                <div class="row pe-3 my-3">
+                  <div class="col-md-2 meta">
+                    <p class="fw-bold text-secondary">Gig Metadata</p>
+                  </div>
+                  <div class="col-md-10 ps-4">
+                    <div class="row border   bg-white text-secondary">
+                      <div class="col-md-4 bg-light"><p class="fw-bold text-secondary my-3 ps-1">STYLE*</p></div>
+                      <div class="col-md-8">
+                        <p class="fw-bold style_box py-2">Select the style of the logo you design:*</p>
+                        <ul class="text-dark">
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="Facebook">3D</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">Twitter</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">Instagram</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">Linkedin</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">WhatsApp</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">Imo</label></li>
+                          <li class="my-1"><input type="radio"><label class="ms-1" for="3d">Google</label></li>
+                        </ul>
+
+                      </div>
+                       
+                    </div>
+                  </div>
+                </div>
+                  <hr class="my-4">
+               <!-- GELLARY DIV START HERE -->
+               <div class="col-md-12 mt-4">
+                <h3 class="text-center">Showcase Your Services In A Gig Gallery</h3>
+              <p class="text-secondary text-center mt-3 mb-4">Encourage buyers to choose your Gig by featuring a variety of your work.</p>
+              </div>
+                 <div class="row my-4 ps-3 pe-5">
+                      <div class="col-md-12 bg-light border py-3">
+                          <p class=" d-inline-block"><i class="fas fa-info-circle mx-2"></i>
+                          To comply with Fiverr’s terms of service, make sure to upload only content you either own  or you have the permission or license to use.</p>
+                        </div>
+                   
+                 </div> 
+                 <div class="col-md-12 mb-3">
+                   <p class="fs-3 fw-bold">Images (up to 3)</p>
+                   <p class="text-secondary">Get noticed by the right buyers with visual examples of your services.</p>
+                 </div>
+                 <!-- Img Gellary -->
+                 <div class="row">
+                   <div class="col-md-3 me-1 mb-3">
+                     <div class="img_gellary">
+                       <label id="customfile" for="imagefile" >
+                        <i class="fas fa-image"></i> 
+                       </label>
+                       <input id="imagefile" type="file" accept=".gif, .jpg, .png">
+                     </div>
+                   </div>
+
+                   <div class="col-md-3 me-1 mb-3">
+                    <div class="img_gellary">
+                      <label id="customfile" for="imagefile" >
+                       <i class="fas fa-image"></i>
+                      </label>
+                      <input id="imagefile" type="file" accept=".gif, .jpg, .png">
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-3 me-1">
+                    <div class="img_gellary">
+                      <label id="customfile" for="imagefile" >
+                       <i class="fas fa-image"></i> 
+                      </label>
+                      <input id="imagefile" type="file" accept=".gif, .jpg, .png">
+                    </div>
+                  </div>
+                  <!-- Video file -->
+                    <div class="col-md-12 my-5">
+                      <p class="fs-3 fw-bold">Video (One only)</p>
+                      <p class="text-secondary">Upload a best video fo attension people eadyly.</p>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="img_gellary">
+                      <label id="customfile" for="imagefile" >
+                       <i class="fas fa-photo-video"></i> 
+                      </label>Upload video
+                      <input id="imagefile" type="file" accept=".mp4">
+                    </div>
+                  </div>
+                 </div>
+              </div>
+             <div class="col-md-2"></div>
+
+            </div>
+            
+          
+          <!-- ----------------------DESCRIPTION & FAG ---------------------------------->
+          <div class="row mt-2">
+            <div class="col-md-2"></div>
+             <div class="col-md-8 bg-white border mb-4 px-md-5 pt-3 ms-md-5">
+              <div class="col-md-12">
+                <p class="fs-4 text-secondary">Description</p>
+                <hr>
+              </div>
+              <div class="col-md-12">
+               <p class="fs-6 text-secondary mb-2"> Describe Your Gig</p>
+               <div class="form-floating description">
+                 <textarea class="form-control description" placeholder="Leave a comment here" id="floatingTextarea2" style="height:50vh"></textarea>
+                 <label for="floatingTextarea2"></label>
+                 <p class="text-secondary text-end">1/1200 Characters</p>
+               </div>
+             </div>
+                 <div class="row mt-5">
+                       <div class="col-md-8"><p class="fs-2 text-secondary">Frequently Asked Questions</p></div>
+               
+                       <div class="col-md-4"><p class="text-end text-primary fw-bold mt-3">ADD FAG</p></div><hr        class="my-3">
+                       <div class="col-md-8"><p class="fs-5 mb-3">Add Questions & Answers for Your Buyers.</p>
+                       <p class=" text-primary fw-bold mt-3">ADD FAG</p></div><hr class="my-3">
+                 </div>
+                 <div class="row my-5">
+                   <div class="col-md-7 col-lg-9"></div>
+                 <div class="col-md-5 col-lg-3 text-sm-center"><a href="" class="btn btn-primary save_btn w-sm-100 ">Save & Continue</a>
+                 <p class="text-center text-primary mt-3">Back</p></div>
+               </div>
+                 
+            </div>
+            
+            <div class="col-md-2"></div>
+          </div>
+          </div>
+
+          <!------------------------------ PRICING DIV START ----------------------------->
+          <div id="pricing" class="container">
+            <div  class="row bg-light ">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 bg-light p-4">
+                <div class="row mt-5">
+                  <div class="col-md-12 ">
+                    <div class="d-flex">
+                      <div class="w-100 ">
+                      <p class="m-0" >Scope & Pricing</p>
+                    </div>
+                      <div class="form-check w-100 text-end">
+                        <label class="pe-2" for="chakebox">Offer Packages</label>
+                         <input class="form-check-input ms-1" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                       </div>
+                    </div>
+                    
+               </div>
+                <hr class="mt-3">
+                </div>
+                <div class="col-md-12"><p class="fs-5 mb-2">Packages</p></div>
+                <!--------- Pakages Detials ----------->
+                 
+                <!-- NEW PRICING DIV START HERE -->
+                  <div class="row pb-3 mb-4">
+                    <!-- <div class="col-md-3 border">price</div> -->
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12 border text-center p-2 text-secondary fw-bold fs-6">BASIC</div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Types here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Descrive Your detials here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <select class="form-select sel" aria-label="Default select example">
+                            <option selected>Delivery Time</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <label for="price"></label>
+                         <input class="price" placeholder="Price $" type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12 border text-center p-2 text-secondary fw-bold fs-6">PRIMARY</div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Types here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Descrive Your detials here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <select class="form-select sel" aria-label="Default select example">
+                            <option selected>Delivery Time</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <label for="price"></label>
+                         <input class="price" placeholder="Price $" type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12 border text-center p-2 text-secondary fw-bold fs-6">ADVANCE</div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Types here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <textarea name="" placeholder="Descrive Your detials here" id="" cols="17" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 border textarea">
+                          <select class="form-select sel" aria-label="Default select example">
+                            <option selected>Delivery Time</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 border input_price textarea">
+                        <label for="price"></label>
+                       <input class="price " placeholder="Price $" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <!-- NEW PRICING DIV END HERE -->
+                 <div class="col-md-12"><p class="fs-5 my-3">Add Extra Service</p></div>
+                  <div class="row border bg-white">
+                    <div class="col-md-12 border-bottom"><p class="fs-6 my-3"><input type="checkbox" class="me-2"> Stock Photo</p></div>
+                    <div class="col-md-12"><p class="fs-6 my-3 text-primary"><i class="fas fa-plus fs-6 my-3"></i> Add New Gigs</p></div>
+                  </div>
+                  
+
+
+              </div>
+              <div class="col-md-2"></div>
+              <!-----  ------- REQUERMENT DIV -------------->
+                  <div class="row my-5">
+                     <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                          <div class="row border bg-white px-2 py-4 " >
+                            <h5>Get all the information you need from buyers to get started</h5>
+                            <p class="text-secondary my-3">Add questions to help buyers provide you with exactly what you need to start working on their order.</p>
+                            <p class="text-center fw-bold requirment">YOUR QUESTIONS</p>
+                            <div class="col-md-4"><a class="btn btn-outline-success mt-5" href="">+ Add New Question</a></div>
+                            
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-md-7 col-lg-9"></div>
+                          <div class="col-md-5 col-lg-3 text-sm-center"><a href="" class="btn btn-primary save_btn w-sm-100 ">Save & Continue</a>
+                          <p class="text-center text-primary mt-3">Back</p></div>
+                        </div>
+                        <div class="col-md-2"></div>
+                      </div>
+                   </div>
+             </div>
+          </div>
+            
+  
+              <div id="requir" class="container py-5">
+                
+              
+             
+          </div>
+       <!-- --------- Gellary div ----------- -->
+        <div id="gellary"  class="container py-5">
+          
+        </div>
+       
+       <div id="publish" class="container pb-5 bg-light">
+          <div class="row border my-5 bg-white">
+            <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <h3 class="text-center text-secondary mt-3">If previous all information is right then publish your gigs</h3>
+                </div>
+                
+                <div class="col-md-12 text-center"><a class="btn btn-success my-4" href="">Publish</a></div>
+                </div>
+                
+              <div class="col-md-3"></div>
+            
+            </div>
+                                
+       </div>
+        
+       
+    </div>
+        
+        
+        
+        
+        </div>
+          
+</section>
+<!------------- CREATE NEW GIGS SECTION END ------------------->
+<!-- FOOTER SECTION START HERE  -->
+<footer id="footer">
+  <div class="container px-lg-0">
+    <div class="row">
+      <div class="col-lg-3 col-6">
+        <h3 class="footer-title">
+          Categories
+        </h3>
+        <ul>
+          <li><a href="#">Graphics & Design</a> </li>
+          <li><a href="#">Digital Marketing</a> </li>
+          <li><a href="#">Writing & Translation</a> </li>
+          <li><a href="#">Video & Animation</a> </li>
+          <li><a href="#">Music & Audio</a> </li>
+          <li><a href="#">Programming & Tech</a> </li>
+          <li><a href="#">Data</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h3 class="footer-title">
+          Support
+        </h3>
+        <ul>
+          <li><a href="#">Help & Support</a> </li>
+          <li><a href="#">Trust & Safety</a> </li>
+          <li><a href="#">Selling on HydroJob</a> </li>
+          <li><a href="#">Buying on HydroJob</a> </li>
+          <li><a href="./contact.html">Contact Us</a> </li>
+          <li><a href="./tarms_condition.html">Terms & Condition</a> </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h3 class="footer-title">
+          Community
+        </h3>
+        <ul>
+          <li><a href="#" >Events</a> </li>
+          <li><a href="#" >Blog</a> </li>
+          <li><a href="#" >Forum</a> </li>
+          <li><a href="#" >Community Standards</a> </li>
+          <li><a href="#" >Podcast</a> </li>
+          <li><a href="#" >Affiliates</a> </li>
+          <li><a href="#" >Invite a Friend</a> </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h3 class="footer-title">
+          About
+        </h3>
+        <ul>
+          <li><a href="#">Careers </a> </li>
+          <li><a href="#">Press & News </a> </li>
+          <li><a href="#"> Partnerships </a></li>
+          <li><a href="#">Privacy Policy </a> </li>
+          <li><a href="#">Terms of Service </a> </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="row copy-text">
+    <p class="text-muted">© All Rights reserved by Real Time Solution</p>
+  </div>
+</footer>
+<!-- FOOTER SECTION END HERE  -->
+
+<!-- BOOTSRAP JS LINK -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<script src="./js/main.js"></script>
+</html>
